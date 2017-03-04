@@ -2,7 +2,7 @@
 #
 # VERSION 0.0.1
 
-FROM jroberts235/rpi-rasbian-jessie-20160831
+FROM jroberts235/rpi-raspian-jessie-20160831
 
 MAINTAINER Jeff Roberts <https://github.com/jroberts235>
 
