@@ -16,8 +16,10 @@ RUN apt-get update && \
     cd /etc/apt/sources.list.d/ && \
     wget http://repo.mosquitto.org/debian/mosquitto-jessie.list && \
     apt-get update && \
-    apt-get install mosquitto && \
+    apt-get install mosquitto -y && \
     apt-get clean
+
+COPY mosquitto.conf /etc/mosquitto/mosquitto.conf
 
 # Expose MQTT port
 EXPOSE 1883
