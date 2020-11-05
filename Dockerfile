@@ -24,8 +24,8 @@ RUN useradd -U mosquitto && \
     mkdir /var/lib/mosquitto/ && \
     chown -R mosquitto. /var/lib/mosquitto
 
-COPY bin/mosquitto /usr/local/bin/mosquitto
-COPY etc/mosquitto.conf /etc/mosquitto/mosquitto.conf
+#COPY bin/mosquitto /usr/local/bin/mosquitto
+#COPY etc/mosquitto.conf /etc/mosquitto/mosquitto.conf
 
 COPY mosquitto.conf /etc/mosquitto/mosquitto.conf
 
